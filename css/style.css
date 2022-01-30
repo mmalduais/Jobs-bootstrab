@@ -1,0 +1,43 @@
+.card {
+  padding-top: 20px;
+}
+
+.slider {
+  padding-top: 20px;
+}
+
+.carousel-control-next {
+  color: red;
+}
+
+.carousel-control-next-icon {
+  background-color: red;
+}
+
+.carousel-control-prev-icon {
+  background-color: red;
+
+}
+
+.card-adver {
+  /* display: flex;
+      justify-content: space-around;
+      align-items: center;
+      */
+}
+
+.card-adver .card {
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+
+
+}
+
+li {
+  padding: 5px;
+}

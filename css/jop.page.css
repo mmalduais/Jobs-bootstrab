@@ -1,0 +1,14 @@
+.jobs .job-contet{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+}
+
+.fil h2, label, select {
+    margin-bottom: 40px;
+}
+
+.jobs .hed{
+    background-color: wheat;
+}
