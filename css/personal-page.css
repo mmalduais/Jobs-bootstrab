@@ -1,0 +1,35 @@
+.personal {
+    text-align: center;
+}
+
+.personal i {
+    margin-right: 7px;
+}
+
+.container {
+    display: flex;
+    /* grid-template-columns: 30% 70%; */
+    gap: 40px;
+}
+
+.about p {
+    
+    max-width: 50%;
+    width: 50%;
+    color: #777;
+    font-size: 17px;
+
+}
+
+.Profile-Details {
+    position: relative;
+    top: -150px;
+}
+div{
+    
+}
+
+.about i{
+    color: red;
+    cursor: pointer;
+}
