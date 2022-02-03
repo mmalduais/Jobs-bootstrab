@@ -25,9 +25,9 @@
 
 </head>
 
-<body>
+<body style="background-color: #eee;">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary " style=" height: 76px;">
 
         <div class="container-fluid">
 
@@ -40,60 +40,62 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" style="color: white; font-size: 18px;"
+                            href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Jobs</a>
+                        <a class="nav-link " style="color: white; font-size: 18px;" href="jop-page.html">Jobs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Job-Details</a>
+                        <a class="nav-link " style="color: white; font-size: 18px;" href="details-job.html">Details</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Services</a>
+                        <a class="nav-link " style="color: white; font-size: 18px;" href="#">Companies</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Companies</a>
+                        <a class="nav-link " style="color: white; font-size: 18px;" href="contact.html">Contact Us</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link " href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Services</a>
+                        <a class="nav-link " style="color: white; font-size: 18px;"
+                            href="sliderVertical.html">DashBord</a>
                     </li>
 
 
                 </ul>
                 <form class="d-flex">
 
-                    <button class="btn btn-outline-success" type="submit"
-                        style="font-size: 20px; color: red; background-color: #eee;">Login</button>
+                    <button class="btn btn-outline-success" id="show-dialog" type="submit"
+                        style="font-size: 20px; color: red; background-color: #eee;;">Login</button>
                 </form>
             </div>
         </div>
 
     </nav>
+
     </div>
     <!--------End ---Header--------------------------------------------->
     <!--------Start---content-jop--------------------------------------------->
-    <div class="container">
-        <div class="row">
-            <div class="filter col-lg-3 col-md-6 col-sm-12">
+    <div class="container" style="background-color: #eee;">
+        <!-- </div> -->
+        <div class="row" >
+          
+            <div class="filter col-lg-3 col-md-6 col-sm-12 " style="background-color: white;">
 
                 <div class="fil">
                     <h2>Flter</h2>
-                    <input type="text" name="" placeholder="Search Keyword">
-                    <label>Show able to Company</label><select>
+                    <input  class="filter" style="margin-bottom: 40px;" type="text" name="" placeholder="Search Keyword">
+                    <label>Show able to Company</label><select  style="margin-bottom: 30px;">
                         <option value="" id=""> Yemen mobile Company </option>
-                        <option value="" id="">Alsaaid Company</option>
+                        <option value="current" id="current">Alsaaid Company</option>
                         <option value="" id="">Alshibani Company</option>
                         <option value="" id="">Albarh Company</option>
                     </select>
-                    <label>Show able to City</label>:
+                    <label style="margin-bottom: 20px;">Show able to City</label>:
                     <br>
-                    <select>
+                    <select style="margin-bottom: 20px;">
 
                         <option value="" id="">Sanna'a</option>
                         <option value="" id="">Taiz</option>
@@ -113,10 +115,69 @@
                 <div class="hed">
                     <h3>Job Listing</h3>
                 </div>
-                <div class="job-contet">
+                <div class="box">
+                <div id="" class="job-contet " style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px; background-color: white;">
                     <div class="image">
                         <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
+                        <p id="current" style="  font-size: 30px; ">Network Engineer</p>
+                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
+                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
+                    </div>
+                    <div class="bbtn">
+                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;"><a href="details-job.html">Applay
+                            Now</button></a> 
+                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
+                    </div>
+                </div>
+            </div>
+                <div class="job-contet " style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px; background-color: white;">
+                    <div class="image">
+                        <img src="image/boot1.PNG">
+                        <p style="  font-size: 30px;">Electrical Engineer</p>
+                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
+                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
+                    </div>
+                    <div class="bbtn">
+                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;"><a href="details-job.html">Applay
+                            Now</button></a> 
+                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
+                    </div>
+                </div>
+                <div class="job-contet" style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px;background-color: white; ">
+                    <div class="image">
+                        <img src="image/boot1.PNG">
+                        <p style="  font-size: 30px;">Rour Engineer</p>
+                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
+                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
+                    </div>
+                    <div class="bbtn">
+                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;"><a href="details-job.html">Applay
+                            Now</button></a> 
+                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
+                    </div>
+                </div>
+                <div class="job-contet" style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px; background-color: white;">
+                    <div class="image">
+                        <img src="image/boot1.PNG">
+                        <p style="  font-size: 30px;">Building Engineer</p>
+                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
+                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
+                    </div>
+                    <div class="bbtn">
+                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;"><a href="details-job.html">Applay
+                            Now</button></a> 
+                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
+                    </div>
+                </div>
+                <div class="job-contet" style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px;background-color: white;">
+                    <div class="image">
+                        <img src="image/boot1.PNG">
+                        <p style="  font-size: 30px;">Street Engineer</p>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
                     </div>
@@ -126,10 +187,11 @@
                         <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
                     </div>
                 </div>
-                <div class="job-contet">
+                <div class="job-contet" style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px; background-color: white;">
                     <div class="image">
                         <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
+                        <p style="  font-size: 30px;">SoftWare Engineer</p>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
                     </div>
@@ -139,10 +201,11 @@
                         <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
                     </div>
                 </div>
-                <div class="job-contet">
+                <div class="job-contet" style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px;background-color: white;">
                     <div class="image">
                         <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
+                        <p style="  font-size: 30px;">SoftWare Engineer</p>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
                     </div>
@@ -152,10 +215,11 @@
                         <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
                     </div>
                 </div>
-                <div class="job-contet">
+                <div class="job-contet" style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px;">
                     <div class="image">
                         <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
+                        <p style="  font-size: 30px;">SoftWare Engineer</p>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
                     </div>
@@ -165,10 +229,11 @@
                         <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
                     </div>
                 </div>
-                <div class="job-contet">
+                <div class="job-contet" style="display: flex;
+                justify-content: space-between;  margin-bottom: 15px; background-color: white;">
                     <div class="image">
                         <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
+                        <p style="  font-size: 30px;">SoftWare Engineer</p>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
                         <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
                     </div>
@@ -178,73 +243,6 @@
                         <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
                     </div>
                 </div>
-                <div class="job-contet">
-                    <div class="image">
-                        <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
-                    </div>
-                    <div class="bbtn">
-                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;">Applay
-                            Now</button>
-                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
-                    </div>
-                </div>
-                <div class="job-contet">
-                    <div class="image">
-                        <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
-                    </div>
-                    <div class="bbtn">
-                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;">Applay
-                            Now</button>
-                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
-                    </div>
-                </div>
-                <div class="job-contet">
-                    <div class="image">
-                        <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
-                    </div>
-                    <div class="bbtn">
-                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;">Applay
-                            Now</button>
-                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
-                    </div>
-                </div>
-                <div class="job-contet">
-                    <div class="image">
-                        <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
-                    </div>
-                    <div class="bbtn">
-                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;">Applay
-                            Now</button>
-                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
-                    </div>
-                </div>
-                <div class="job-contet">
-                    <div class="image">
-                        <img src="image/boot1.PNG">
-                        <p>SoftWare Engineer</p>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">California, USA</small>
-                        <i class="far fa-clock"></i><small style="color: #777; font-size: 17px;">Part-time</small>
-                    </div>
-                    <div class="bbtn">
-                        <button style="background-color: green; color: white; border-radius: 7px; padding: 10px;">Applay
-                            Now</button>
-                        <p style="color: #777; font-size: 17px; font-style: italic;">Date line: 31 Jan 2020</p>
-                    </div>
-                </div>
-
-
             </div>
         </div>
     </div>
@@ -306,6 +304,7 @@
                     </ul>
 
                 </div>
+
                 <!-- Grid column -->
 
                 <hr class="clearfix w-100 d-md-none">
@@ -343,10 +342,10 @@
                     <!-- Links -->
 
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Subscribe</h5>
-                    <div class="btnn d-flex">
+                    <div class="btnn d-flex flex-column">
                         <input type="email" placeholder="Enter Your Email" name=""
                             style="border-radius: 7px; padding: 10px">
-                        <button style="border-radius: 7px; ">Subscribe</button>
+                        <button style="border-radius: 7px;">Subscribe</button>
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -357,18 +356,9 @@
         </div>
         <!-- Footer Links -->
 
-        <hr>
 
         <!-- Call to action -->
-        <ul class="list-unstyled list-inline text-center py-2">
-            <li class="list-inline-item">
-                <h5 class="mb-1">Register for free</h5>
-            </li>
-            <li class="list-inline-item">
-                <a href="#!" class="btn btn-danger btn-rounded"
-                    style="background-color: rgb(14, 167, 60); font-size: 20px;">Sign up!</a>
-            </li>
-        </ul>
+
         <!-- Call to action -->
 
         <hr>
@@ -411,6 +401,53 @@
 
     </footer>
     <!-- Footer -->
+
+
+    <!-- Call to action -->
+
+    <!-- Call to action -->
+
+    <hr>
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+                <i class="fab fa-facebook-f"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+                <i class="fab fa-twitter"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+                <i class="fab fa-google-plus-g"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+                <i class="fab fa-linkedin-in"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+                <i class="fab fa-dribbble"> </i>
+            </a>
+        </li>
+    </ul>
+    <!-- Social buttons -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Copyright ©2022 All rights reserved |
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+<script src="js/rat.js"></script>
 
     <script src="js/popper.min.js"></script>
 

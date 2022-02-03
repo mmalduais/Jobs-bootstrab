@@ -10,14 +10,9 @@
   color: red;
 }
 
-.carousel-control-next-icon {
-  background-color: red;
-}
+.carousel-control-next-icon {}
 
-.carousel-control-prev-icon {
-  background-color: red;
-
-}
+.carousel-control-prev-icon {}
 
 .card-adver {
   /* display: flex;
@@ -61,6 +56,10 @@ li {
 
 }
 
+.cards .image a img {
+  max-width: 20%;
+}
+
 .cards .image img {
   max-width: 20%;
 }
@@ -71,6 +70,17 @@ li {
 }
 
 .card-text {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
+}
+
+.cards p {
+  color: #777;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.time {
+  color: red;
 }

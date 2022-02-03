@@ -23,79 +23,105 @@
     <!----Start Our-Skill--->
     <div class="myskill" id="Skill">
 
-        <h2 class="topic">Skills</h2>
-        <div class="icon">
-          <a href="edit-skill.html"><i class="fas fa-pencil-alt"></i></a>  
+        <h2 class="topic" style="font-size: 21px;
+        text-align: center;
+        padding-top: 20px;">Skills</h2>
 
-            <i class="far fa-trash-alt"></i>
-        </div>
 
 
         <div class="container">
             <div class="skills">
                 <div class="skill">
-                    <h3>HTML <span>80%</span></h3>
+                    <h3>HTML </h3>
                     <div class="the-progress">
                         <span style="width: 80%"></span>
                     </div>
 
                 </div>
                 <div class="skill">
-                    <h3>CSS <span>85%</span></h3>
+                    <h3>CSS </h3>
                     <div class="the-progress">
                         <span style="width: 85%"></span>
                     </div>
 
                 </div>
                 <div class="skill">
-                    <h3>JavaScript <span>70%</span></h3>
+                    <h3>JavaScript </h3>
                     <div class="the-progress">
                         <span style="width: 70%"></span>
                     </div>
                 </div>
                 <div class="skill">
-                    <h3>Python <span>80%</span></h3>
+                    <h3>Python </h3>
                     <div class="the-progress">
-                        <span style="width: 80%"></span>
+                        <span style="width: 50%"></span>
                     </div>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill">
-                    <h3>php <span>80%</span></h3>
+                    <h3>php </h3>
                     <div class="the-progress">
-                        <span style="width: 80%"></span>
+                        <span style="width: 30%"></span>
                     </div>
                 </div>
                 <div class="skill">
-                    <h3>Java <span>85%</span></h3>
+                    <h3>Java </h3>
                     <div class="the-progress">
                         <span style="width: 85%"></span>
                     </div>
                 </div>
                 <div class="skill">
-                    <h3>JavaScript <span>70%</span></h3>
+                    <h3>JavaScript </h3>
                     <div class="the-progress">
-                        <span style="width: 70%"></span>
+                        <span style="width: 90%"></span>
                     </div>
                 </div>
                 <div class="skill">
-                    <h3>C++ <span>80%</span></h3>
+                    <h3>C++ </h3>
                     <div class="the-progress">
-                        <span style="width: 80%"></span>
+                        <span style="width: 75%"></span>
                     </div>
                 </div>
 
             </div>
+
         </div>
+        <div></div>
+        <div></div>
 
 
+        <div class="icon">
+            <a href="edait-skill.html"><i class="fas fa-user-edit"></i></a>
+            <!-- <i  class="fas fa-trash"></i> -->
+            <!--Modal Delet-->
+            <p onclick="document.getElementById('id01').style.display='block'"> <i class="fas fa-trash"></i></p>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">×</span>
+                <form class="modal-content" action="/action_page.php">
+                    <div class="container" style="display: flex; flex-direction: column;">
+                        <h1>Delete Account</h1>
+                        <p>Are you sure you want to delete your account?</p>
+
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="deletebtn">Delete</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a href="add-skill.html"><i class="fas fa-plus-circle"></i></a>
+        </div>
 
     </div>
 
 
 
-    <!----End Our-Skill--->
+    <script src="js/main.js"></script>
 
 </body>
 

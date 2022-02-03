@@ -108,8 +108,12 @@ hr {
 
 
 
+/***********************************************************************************/
 
-//**************************************************//
+
+
+
+
 body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -147,82 +151,54 @@ ul {
     margin-right: auto;
 }
 
-* End Services */ .myskill {
-    padding-top: var(--main-padding-top);
-    padding-bottom: var(--main-padding-bottom);
-    position: relative;
+
+
+
+/* start myskill */
+
+.myexper {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+
 }
 
-.myskill .container {
-    display: flex;
-    align-items: center;
-}
-
-
-.myskill .container {
+.myexper .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 40px;
-
 }
 
-.myskill .skills {
-    flex: 1;
-}
-
-.myskill .skill h3 {
+.myexper .card {
+    box-shadow: 0px 1px 7px rgb(0 0 0 / 10%);
+    margin-left: 20px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.myexper .text {
+    text-align: center;
+}
+
+.myexper .text h3 {
+
+    padding: 5px 0 10px;
+    font-size: 17px;
+    color: #ff000085;
+}
+
+.myexper .text h2 {
+    margin: 0;
+    padding: 15px 10px 10px;
+
+}
+
+.myexper .text p {
+    color: #777;
+    line-height: 1.4;
     font-size: 15px;
-}
-
-.myskill .skill h3 span {
-    font-size: 12px;
-    border: 1px solid #ccc;
-    padding: 3px 5px;
-    border-radius: 4px;
-    color: var(--main-color);
-}
-
-.myskill .skill .the-progress {
-    height: 15px;
-    border-radius: 15px;
-    background-color: #eee;
-    position: relative;
-}
-
-.myskill .skill .the-progress span {
-    position: absolute;
-    border-radius: 15px;
-    left: 0;
-    top: 0;
-    height: 100%;
-    background-color: var(--main-color);
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-}
-
-/* End myskill */
-.icon i {
-    margin-right: 30px;
-    color: red;
-    cursor: pointer;
-
-}
-
-.iconss {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* border: 1px solid black; */
-    margin-left: 91px;
-    margin-right: 84px;
-    margin-top: 10px;
 
 }

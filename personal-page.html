@@ -21,26 +21,48 @@
     <link rel="stylesheet" href="css/jop-page.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/personal-page.css">
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header flex-column">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE5CD;</i>
+                    </div>
+                    <h4 class="modal-title w-100">Are you sure?</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Do you really want to delete these records? This process cannot be undone.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
+
+
+    <style>
+
+    </style>
 </head>
 
 <body>
 
 
 
-
-
-
     <div class="container">
-
-        <div class="personal ">
-            <div class="card">
-                <img src="image/personal.jpg" alt="">
-                <div class="content">
-                    <h4 style="color: blue;">Kevin Anderson</h4>
+        <div class="row">
+            <div class="card" style=" width: 13rem;">
+                <img src="image/personal.jpg " style="max-width: 100px ; margin: auto; border-radius: 50%;"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text" style="color: blue; font-size: 20px;">Kevin Anderson</p>
                     <p>Web Designer</p>
                     <i class="fab fa-twitter" style="color: rebeccapurple;"></i>
                     <i class="fab fa-facebook" style="color: rebeccapurple;"></i>
@@ -49,64 +71,73 @@
                 </div>
             </div>
 
-        </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row " style="padding-top: 10px;">
+                                <div class="col-lg-5 " style="color: blue;">First Name:</div>
+                                <div class="col-lg-7 ">Kevin </div>
+                                <div class="col-lg-5 " style="color: blue;">Last Name:</div>
+                                <div class="col-lg-7 "> Anderson</div>
+                                <div class="col-lg-5 " style="color: blue;">Company:</div>
+                                <div class="col-lg-7 ">Lueilwitz, Wisoky and Leuschke</div>
+                                <div class="col-lg-4 " style="color: blue;">Email:</div>
+                                <div class="col-lg-8 ">k.anderson@example.com</div>
+                                <div class="col-lg-5 " style="color: blue;">Address:</div>
+                                <div class="col-lg-7 ">USA</div>
+                                <div class="col-lg-5 " style="color: blue;">Phone:</div>
+                                <div class="col-lg-7 ">(436) 486-3538 x29071</div>
+                                <div class="col-lg-4 " style="color: blue;">Time-Zone:</div>
+                                <div class="col-lg-8 ">k.anderson@example.com</div>
+                                <div style="border-bottom: 1px solid black;"></div>
 
-        <div class="navv">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light col-lg-9" style="margin-bottom: 220px;">
+                                <div class="icon">
+                                    <a href="personal-Edait.html"><i class="fas fa-user-edit"></i></a></a>
+                                    <!-- <i  class="fas fa-trash"></i> -->
+                                    <!--Modal Delet-->
+                                    <p onclick="document.getElementById('id01').style.display='block'"> <i
+                                            class="fas fa-trash"></i></p>
 
+                                    <div id="id01" class="modal">
+                                        <span onclick="document.getElementById('id01').style.display='none'"
+                                            class="close" title="Close Modal">×</span>
+                                        <form class="modal-content" action="/action_page.php">
+                                            <div class="container" style="display: flex; flex-direction: column;">
+                                                <h1>Delete Account</h1>
+                                                <p>Are you sure you want to delete your account?</p>
 
+                                                <div class="clearfix">
+                                                    <button type="button"
+                                                        onclick="document.getElementById('id01').style.display='none'"
+                                                        class="cancelbtn">Cancel</button>
+                                                    <button type="button"
+                                                        onclick="document.getElementById('id01').style.display='none'"
+                                                        class="deletebtn">Delete</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <a href="add-personal.html"><i class="fas fa-plus-circle"></i></a>
+                                </div>
 
-            </nav>
-            <div class="about" style="position: relative;  top:-200px; ">
+                            </div>
 
-                <h3 style="color: blue;">About</h3>
-                <p>Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est
-                    unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga
-                    sequi sed ea saepe at unde.</p>
-                <i class="fas fa-pencil-alt"></i>
-               <br>
-                <i class="far fa-trash-alt"></i>
-            </div>
-            <div class="Profile-Details">
-                <h3 style="color:blue">Profile Details</h3>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 ">Full Name</div>
-                        <div class="col-lg-4 ">Kevin Anderson</div>
-                        <div class="col-lg-5 ">Company</div>
-                        <div class="col-lg-4 ">Lueilwitz, Wisoky and Leuschke</div>
-                        <div class="col-lg-5 ">Job</div>
-                        <div class="col-lg-4 ">Country</div>
-                        <div class="col-lg-5 ">Address</div>
-                        <div class="col-lg-4 ">USA</div>
-
-
-                        <div class="col-lg-5 ">Phone</div>
-                        <div class="col-lg-4 ">(436) 486-3538 x29071</div>
-                        <div class="col-lg-5 ">Email</div>
-                        <div class="col-lg-4 ">k.anderson@example.com</div>
-
+                        </div>
                     </div>
-
-
                 </div>
+
             </div>
+
+
         </div>
-
-
-
-
-
-
-
 
     </div>
-    <!------------------------------------------------------------------------------------------>
 
+    <script>
+        // Get the modal
 
-
-
-
+    </script>
 
 
 
@@ -120,6 +151,7 @@
 
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
